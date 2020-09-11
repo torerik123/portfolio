@@ -3,4 +3,4 @@
 - Plan your next adventure
 
 
-![Landing page](https://imgur.com/b1FCY29)
+![Landing page](https://i.ibb.co/5YzTdWW/landingpage.jpg)
