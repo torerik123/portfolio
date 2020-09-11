@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+<div class="dashboard-container">
+    <div class="pagetitle-header">
+        <h2 class="dashboard">Dashboard</h2>
+    </div>
+
+    <div class="new-project">
+        <!--New project-->
+        <form action="/dashboard" method="post">
+            <div class="form-group">
+                <input id="project_name" autocomplete="off" autofocus class="form-control" name="project_name" placeholder="Project name" type="text" maxlength="35">
+            </div>
+            <button id="submit" class="btn btn-primary" type="submit">New project</button>
+        </form>
+    </div>
+
+    {% if projects %}
+    <div class="explore-container">
+        {% for project in projects %}
+            <div class="explore-container-content">
+                <div class="explore-container-post">
+                    <h3 class="post-title"><a href="/index/{{project["project_id"]}}">{{project["project_name"]}}</a></h3>
+
+                    {% if project["project_description"] %}
+                    <div class="post-description">{{project["project_description"]}}</div>
+                    {% endif %}
+            </div>
+                </div>
+            {% endfor %}
+    </div>
+    {% endif %}
+</div>
+
+<!--Delete Project-->
+<div class="del-project">
+    <form action="/del_project" method="post">
+            <div class="form-group">
+                <select id="project_id" class="form-control" name="project_id">
+                    <option disabled selected value>Project</option>
+                    {% for project in projects %}
+
+                            {% if projects %}
+
+                            <option value="{{project["project_id"]}}">{{project["project_name"]}}</option>
+
+                            {% endif %}
+
+                        {% endfor %}
+                </select>
+            </div>
+        <button id="del_submit" class="btn btn-primary" type="submit">Delete project</button>
+    </form>
+</div>
+
+
+<script>
+    <!--NEW PROJECT - Disable submit button by default-->
+        document.querySelector('#submit').disabled = true;
+
+        <!--Disable submit button by if any fields are left blank-->
+        <!--Project name-->
+        document.querySelector('#project_name').onkeyup = function () {
+            if (document.querySelector('#project_name').value !== '') {
+                document.querySelector('#submit').disabled = false;
+            } else {
+                document.querySelector('#submit').disabled = true;
+            }
+        }
+
+        <!--DELETE PROJECT - Disable submit button by default-->
+        document.querySelector('#del_submit').disabled = true;
+
+        <!--Disable submit button by no project is selected-->
+        document.querySelector('#project_id').onclick = function () {
+            if (document.querySelector('#project_id').value !== '') {
+                document.querySelector('#del_submit').disabled = false;
+            } else {
+                document.querySelector('#del_submit').disabled = true;
+            }
+        }
+
+</script>
+
+
+{% endblock %}
