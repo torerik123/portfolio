@@ -1,0 +1,13 @@
+.banner
+{
+    background-color:black;
+    height:100vh
+}
+
+.name
+{
+    display:flex;
+    justify-content:center;
+    color:white;
+
+}
