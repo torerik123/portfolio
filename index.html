@@ -1,40 +1,159 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Tor Erik Grimen</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tor Erik Grimen</title>
+</head>
+<body>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Tor Erik Grimen</h1>
-						<p>Web Developer</p>
-						<nav>
-							<ul>
-								<li><a href="https://github.com/torerik123" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:tor_erik_grimen@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+<!--Hero-->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <h1 class="display-4">Tor Erik Grimen</h1>
+    <p class="lead">Software Developer</p>
+    <button type="button" class="btn btn-primary">View projects</button>
+  </div>
+</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-					</footer>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<!--Skills-->
+<section class="skills">
+  <div class="container text-center">
+    <h1 class="card-title">Skills</h5>
+      <p class="card-text">
+          Python - Javascript - C - HTML - CSS - PostgreSQL - SQlite - Flask - Bootstrap - Heroku
+        </ul>
+      </p>
+  </div>
+</section>
+
+
+<div class="main">
+  <div class="content">
+  
+    <!--Projects-->
+    <div class="projects">
+      <div class="container"> 
+          <h1 class="card-title text-center">Projects</h1>
+
+          <!--Cards-->
+          <div class="card mb-3">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
+                    <img class="" src="http://via.placeholder.com/500x281" alt="Card image cap">
+                    <div class="code-buttons">¨
+                      <button type="button" class="btn btn-primary">View Demo</button>
+                      <button type="button" class="btn btn-primary">Code</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Adventure Planner</h4>
+                    <p class="card-text"><p class="card-text">
+                      Backend: Python/Flask - PostgreSQL <br> Front-end: Javascript, HTML, CSS <br>
+                      <br>
+                      Flask application for creating and sharing gear lists for all kinds of adventures. The main focus was to create an app for people who are planning long distance trips where packing light and saving weight is essential. 
+                      </p>
+                      
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-horizontal">
+              <div class="img-square-wrapper">
+                  <img class="" src="http://via.placeholder.com/500x281" alt="Card image cap">
+                  <div class="code-buttons">¨
+                    <button type="button" class="btn btn-primary">View Demo</button>
+                    <button type="button" class="btn btn-primary">Code</button>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <h4 class="card-title">Is it any good?</h4>
+                  <p class="card-text">
+                      Back-end: Python - Flask - PostgreSQL <br>
+                      Front-end: - HTML - CSS - Javascript<br>
+                      <br>  
+                      Find book reviews by title, author or ISBN number.
+                      I built this to learn more about object-oriented programming and using APIs to display best selling books, ratings, descriptions and book covers.
+                      
+              </div>
+          </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-horizontal">
+            <div class="img-square-wrapper">
+                <img class="" src="http://via.placeholder.com/500x281" alt="Card image cap">
+                <div class="code-buttons">¨
+                  <button type="button" class="btn btn-primary">View Demo</button>
+                  <button type="button" class="btn btn-primary">Code</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Quiz</h4>
+                <p class="card-text">
+                    Javascript - HTML - CSS<br>
+                    <br>  
+                    Single page Trivia quiz built with Javascript to practice DOM manipulation. 
+                    The score updates after each answer is submitted. 
+                    The user has 100 seconds to complete all the questions, and then has the option to reset the quiz and play again.
+              </div>
+          </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-horizontal">
+            <div class="img-square-wrapper">
+                <img class="" src="http://via.placeholder.com/500x281" alt="Card image cap">
+                <div class="code-buttons">¨
+                  <button type="button" class="btn btn-primary">View Demo</button>
+                  <button type="button" class="btn btn-primary">Code</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Tic Tac Toe</h4>
+                <p class="card-text">
+                    Python - Flask<br>
+                    <br>  
+                    Tic Tac Toe built with Flask. After playing a move, the user has the option to undo the last move played.
+                    When a game is over, the user can reset the game and play again.
+              </div>
+          </div>
+      </div>
+
+
+      </div>
+  </div>  
+  </div>
+</div>
+
+<div class="about">
+  <h1 class="card-title">About</h1>
+  <div class="container text-center">
+    <p class="card-text">Some info about me</p>
+   </div>
+</div>
+
+  <!--Contact-->
+  <section class="contact">
+    <div class="container text-center">
+     <h1 class="card-title">Contact</h1>
+        <p class="card-text">tor_erik_grimen@hotmail.com | 94140351</p>
+    </div>
+  </section>
+  
+
+  <!--About-->
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
