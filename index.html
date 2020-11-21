@@ -10,44 +10,54 @@
     <title>Tor Erik Grimen</title>
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a class="navbar-brand" href="#">Tor Erik Grimen</a>
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-right" href="#top">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Contact</a>
+          <a class="nav-link" href="#">Resume</a>
         </li>
       </ul>
     </div>
   </nav>
-
+<a name="top"></a>
 
 <!--Hero-->
 <div class="jumbotron jumbotron-fluid">
   <div class="container text-center">
-    <h1 class="display-4">Tor Erik Grimen</h1>
-    <p class="lead">Software Developer</p>
-    <button type="button" class="btn btn-primary">View projects</button>
+    <h1 class="display-4" id="jumbotron-title">Tor Erik Grimen</h1>
+    <p class="lead" id="jumbotron-title">Software Developer</p>
+    <a type="button" href="#projects" class="btn btn-primary" id="jumbotron-title">View projects</a>
   </div>
+
+  <div class="icons">
+    <i class="devicon-python-plain-wordmark"></i>
+    <i class="fab fa-js"></i>
+    <i class="devicon-c-plain"></i>
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-css3-plain-wordmark"></i>
+  </div>
+  
 </div>
 
 <!--About-->
+<a name="about"></a>
 <div class="about">
   <h1 class="card-title">About</h1>
   
+
   <div class="container">
     <div class="row">
       <div class="col">
@@ -59,21 +69,30 @@
           </div>
 
           <div class="skills">
-            <p class="card-text">I'm the best developer in the world. Hire me.</p>
-
+            <p class="card-text">I'm a software developer based in Trondheim. I like to make cool things and solve interesting problems.</p>
+            
             <hr>
             <h5 class="card-title">Skills:</h5>
-            <span class="badge badge-pill badge-dark">Python</span>
-            <span class="badge badge-pill badge-dark">Javascript</span>
-            <span class="badge badge-pill badge-dark">C</span>
-            <span class="badge badge-pill badge-dark">HTML</span>
-            <span class="badge badge-pill badge-dark">CSS</span>
-            <span class="badge badge-pill badge-dark">PostgreSQL</span>
-            <span class="badge badge-pill badge-dark">SQlite</span>
-            <span class="badge badge-pill badge-dark">Flask</span>
-            <span class="badge badge-pill badge-dark">Bootstrap</span>
-            <span class="badge badge-pill badge-dark">Git</span>
-            <span class="badge badge-pill badge-dark">Github</span>
+            <p>
+              <strong>Languages: </strong>
+                <span class="badge badge-pill badge-dark">Python</span> <span class="badge badge-pill badge-dark">Javascript</span> 
+                <span class="badge badge-pill badge-dark">C</span>
+                <span class="badge badge-pill badge-dark">HTML</span>
+                <span class="badge badge-pill badge-dark">CSS</span>
+                <br>
+              <strong>Frameworks/Libraries: </strong>
+                <span class="badge badge-pill badge-dark">Flask</span>
+                <span class="badge badge-pill badge-dark">Bootstrap</span>
+                <br>
+              <strong>Database: </strong>
+                <span class="badge badge-pill badge-dark">PostgreSQL</span>
+                <span class="badge badge-pill badge-dark">SQlite</span>
+              <br>
+              <strong>Version Control: </strong>
+                <span class="badge badge-pill badge-dark">Git</span>
+                <span class="badge badge-pill badge-dark">Github</span>
+              <br>
+            </p>
           </div>
         </div>
       </div>
@@ -81,13 +100,16 @@
   </div>
 </div>
 
+<a name="projects"></a>
+
 <div class="main">
+
   <div class="content">
   
     <!--Projects-->
     <div class="projects">
       <div class="container"> 
-          <h1 class="card-title text-center">Projects</h1>
+          <h1 class="card-title text-center" id="projects-title">Projects</h1>
 
           <!--Cards-->
           <div class="card mb-3">
@@ -108,7 +130,7 @@
                       <span class="badge badge-pill badge-dark">CSS</span>
                       <span class="badge badge-pill badge-dark">PostgreSQL</span>
                       <span class="badge badge-pill badge-dark">Bootstrap</span><br>
-                      Flask application for creating and sharing gear lists for all kinds of adventures. The main focus was to create an app for people who are planning long distance trips where packing light and saving weight is essential. 
+                      Flask application for creating and sharing gear lists for all kinds of adventures. The idea was to create an app for people who are planning long distance trips where packing light and saving weight is essential. 
                       </p>
                       
                 </div>
@@ -197,8 +219,8 @@
   <footer class="contact">
     <div class="container text-center">
      <span style="font-size: 2rem;">
-      <i class="fab fa-github"></i>
-      <i class="fas fa-envelope"></i>
+      <a class="fab fa-github" href="https://github.com/torerik123"></a>
+      <a class="fas fa-envelope" href="#"></a>
      </span>   
     </div>
   </footer>

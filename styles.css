@@ -1,7 +1,7 @@
 .main {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(339deg, rgba(47, 47, 47,0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19, 19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    background-image: linear-gradient(339deg, rgba(70, 62, 62, 0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19, 19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
 }
 
 .content {
@@ -15,24 +15,58 @@
     object-fit: cover;
 }
 
+/* Navbar */
+#navbarNav {
+    font-size: large;
+}
+
 
 /* Section titles */
 
 /* Hero */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+#jumbotron-title, 
+.about > .card-title,
+#projects-title
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#jumbotron-title {
+    color:white;
+    font-weight: 400;;
+}
+
+.about > .card-title,
+#projects-title {
+    
+}
+
 .jumbotron {
     margin:0;
     height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Oswald', sans-serif;
-    background-color: black;
-    color:white;
+    background-color: black;;
    /* background-image: linear-gradient(346deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 22%,rgba(140, 140, 140,0.04) 22%, rgba(140, 140, 140,0.04) 69%,rgba(225, 225, 225,0.04) 69%, rgba(225, 225, 225,0.04) 100%),linear-gradient(31deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 42%,rgba(140, 140, 140,0.04) 42%, rgba(140, 140, 140,0.04) 85%,rgba(225, 225, 225,0.04) 85%, rgba(225, 225, 225,0.04) 100%),linear-gradient(55deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 13%,rgba(140, 140, 140,0.04) 13%, rgba(140, 140, 140,0.04) 72%,rgba(225, 225, 225,0.04) 72%, rgba(225, 225, 225,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
     */
     background-image: url("ocean.jpg");
 }
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5em;
+}
+
+.icons > i {
+    margin:10px;
+    color:white;
+}
+
 
 /*Skills */
 .skills {
