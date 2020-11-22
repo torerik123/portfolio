@@ -22,13 +22,9 @@ body {
 }
 
 /* Navbar */
-#navbar {
-    display:none;
-}
 #navbarNav {
     font-size: large;
 }
-
 
 /* Section titles */
 
@@ -45,11 +41,6 @@ body {
 #jumbotron-title {
     color:white;
     font-weight: 400;;
-}
-
-.about > .card-title,
-#projects-title {
-   
 }
 
 .jumbotron {
@@ -80,8 +71,21 @@ body {
     padding:3%;
 }
 
-#intro {
+.skills-container {
+    display: flex;
+}
 
+.col > .skills {
+    border-style:solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+}
+
+.info {
+    margin-left:10px;
+    border-style:solid;
 }
 
 /* Projects */
@@ -89,17 +93,28 @@ body {
     margin:1em;
 }
 
-/* Card height matches img size */
-.projects > .container > .card {
-    
+.img-square-wrapper {
+    height:250px;
+    width:500px;
 }
 
+.code-buttons {
+    display: flex;
+    margin-top: -10%;
+    margin-left:60%;
+}
+
+.code-buttons > .btn {
+    margin-right:10px;
+}
+
+/* Card height matches img size */
 .screenshot {
     width:500px;
     height:250px;
 }
 
-
+/* Override bootstrap default card display, show cards with image left and card content right */
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
@@ -134,22 +149,6 @@ body {
     justify-content: center;
 }
 
-.col > .skills {
-    border-style:solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height:100%;
-}
-
-.skills-container {
-    display: flex;
-}
-.info {
-    margin-left:10px;
-    border-style:solid;
-}
-
 .picture-img {
     width:40%;
     display: flex;
@@ -175,33 +174,19 @@ body {
     background-color:gray;
 }
 
-.img-square-wrapper {
-    height:250px;
-    width:500px;
-}
-
-.code-buttons {
-    display: flex;
-    margin-top: -10%;
-    margin-left:60%;
-}
-
-.code-buttons > .btn {
-    margin-right:10px;
-}
-
 /* Footer */
 .footer {
-    background: dimgray;
+    background: #343a40;
+    color:white;
 }
 
-/* Remove link styling */
+/* Remove link styling for icons*/
   a, a:focus, a:active {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 a:hover {
     text-decoration: none;
-    color:white;
+    color:#191970;
 }
