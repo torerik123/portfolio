@@ -11,12 +11,13 @@ html {
 .main {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(339deg, rgba(70, 62, 62, 0.02) 0%, rgba(47, 47, 47,0.02) 42%,transparent 42%, transparent 99%,rgba(17, 17, 17,0.02) 99%, rgba(17, 17, 17,0.02) 100%),linear-gradient(257deg, rgba(65, 65, 65,0.02) 0%, rgba(65, 65, 65,0.02) 11%,transparent 11%, transparent 92%,rgba(53, 53, 53,0.02) 92%, rgba(53, 53, 53,0.02) 100%),linear-gradient(191deg, rgba(5, 5, 5,0.02) 0%, rgba(5, 5, 5,0.02) 1%,transparent 1%, transparent 45%,rgba(19, 19, 19,0.02) 45%, rgba(19, 19, 19,0.02) 100%),linear-gradient(29deg, rgba(28, 28, 28,0.02) 0%, rgba(28, 28, 28,0.02) 33%,transparent 33%, transparent 40%,rgba(220, 220, 220,0.02) 40%, rgba(220, 220, 220,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    background-image: url("ocean.jpg");
 }
 
 .content {
     width:70%;
     height:100%;
+    background-color: #ffffff;
 }
 
 
@@ -49,7 +50,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #343a40
 }
 
 .icons {
@@ -178,18 +178,18 @@ html {
 .contact {
     display: flex;
     justify-content: center;
-    color: white;
-    background: darkgrey;
+    background-color: #121113;
 }
 
 .form-container {
     margin:2%;
     padding:2%;
+    border-radius:10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width:50%;
-    background: #343a40;
+    background: #C0C0C0;
 }
 
 /* Footer */
@@ -216,4 +216,14 @@ a:hover {
     background-color:transparent;
     border-color:white;
     border-width: 2px;
+}
+
+/* Gradients */
+.jumbotron {
+    background: linear-gradient(#2C3E50, #000000);
+}
+
+.contact {
+    background-color:#556;
+
 }
