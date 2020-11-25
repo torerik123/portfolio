@@ -11,7 +11,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: black;
+    background-color:#212121;
 }
 
 .content {
@@ -91,7 +91,7 @@ html {
 
 /*Skills */
 .skills {
-    margin-top:1em;
+    margin-top:2em;
     display: flex;
     flex-direction: column;
 }
@@ -101,10 +101,10 @@ html {
     color:white;
 }
 
-#border {
-    border-color: white;
-    border-style: solid;
+.skills > .card-title {
+    text-decoration: underline;
 }
+
 
 #skills-col {
     /*display: flex;
@@ -114,28 +114,27 @@ html {
 
 .info {
     margin-left:10px;
-    border-style:solid;
 }
 
 /* Projects */
-
-.projects > .container > .card-title {
-    margin:1em;
+#projects-title {
+    margin: 1em;
 }
 
-.code-buttons {
-    display: flex;
-    margin-top: -10%;
-    margin-left:60%;
+.buttoncontainer {
+    
 }
 
-.code-buttons > .btn {
-    margin-right:10px;
+.projectbutton {
+    
 }
 
+
+/* Remove outline from Bootstrap cards */
 .card {
     background-color: transparent;
     color:white;
+    border-style: none;
 }
 
 /* About */
