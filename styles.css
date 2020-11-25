@@ -47,9 +47,9 @@ html {
 
 .jumbotron {
     margin:0;
-    height:60vh;
+    height:100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -61,7 +61,7 @@ html {
     color:white;
 }
 
-.viewprojects {
+.hero-button {
     color:pink;
     text-decoration: underline;
 }
@@ -91,14 +91,25 @@ html {
 
 /*Skills */
 .skills {
+    margin-top:1em;
     display: flex;
     flex-direction: column;
-    padding:3%;
+}
+
+
+#skills {
+    color:white;
+}
+
+#border {
+    border-color: white;
+    border-style: solid;
 }
 
 #skills-col {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: flex-start;
+    margin-right:20%;*/
 }
 
 .info {
@@ -110,11 +121,6 @@ html {
 
 .projects > .container > .card-title {
     margin:1em;
-}
-
-.img-square-wrapper {
-    
-    
 }
 
 .code-buttons {
