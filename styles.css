@@ -9,11 +9,15 @@ html {
 
 .main {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     background-color: black;
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width:70%;
     height:100%;
 }
@@ -103,13 +107,14 @@ html {
 }
 
 /* Projects */
+
 .projects > .container > .card-title {
     margin:1em;
 }
 
 .img-square-wrapper {
-    height:250px;
-    width:500px;
+    
+    
 }
 
 .code-buttons {
@@ -122,20 +127,8 @@ html {
     margin-right:10px;
 }
 
-/* Card height matches img size */
-.screenshot {
-    width:500px;
-    height:250px;
-}
-
-/* Override bootstrap default card display, show cards with image left and card content right */
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-  }
-
 .card {
-    background-color: #484848;
+    background-color: transparent;
     color:white;
 }
 
