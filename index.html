@@ -37,12 +37,29 @@
   </nav>
 <!--Hero-->
 <div id="home" class="jumbotron jumbotron-fluid">
-  <div class="container text-center">
-    <h1 class="display-4" id="jumbotron-title">Tor Erik Grimen</h1>
-    <p class="lead" id="jumbotron-title">Software Developer</p>
-    <a type="button" href="#projects" class="btn btn-dark" id="jumbotron-title">View projects</a>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="left" class="col">
+        <div class="container">
+          <h1 class="display-4 text-center" id="jumbotron-title">Tor Erik<br>Grimen<br></h1>
+          <div class="profile-icons">
+            <a id="icon-contact" class="fab fa-github" href="https://github.com/torerik123"></a>
+            <a id="icon-contact" class="fas fa-envelope" href="#contact"></a>
+          </div>
+        </div>
+      </div>
+      <div id="right" class="col">    
+        <h2 class="card-title">--Introduction</h2>
+        <h3 class="card-title">Software developer</h2>
+        <p>I'm a software developer based in Trondheim. I like to make cool things and solve interesting problems.</p>
+        <a href="#projects" class="viewprojects">View projects</a>
+      </div>
+    </div>
   </div>
 
+
+  <!--
   <div class="icons">
     <i class="devicon-python-plain-wordmark"></i>
     <i class="fab fa-js"></i>
@@ -50,33 +67,18 @@
     <i class="devicon-html5-plain-wordmark"></i>
     <i class="devicon-css3-plain-wordmark"></i>
   </div>
-  
+-->
 </div>
 
 <!--About-->
 <div id="about" class="about">
-  <h1 class="card-title">About</h1>
-  
-
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="skills-container">
           <div class="img-col">
-            <div class="picture-img">
-              <img class="profile-pic" src="self.jpg" alt="Card image cap">
-              <div class="profile-icons">
-                <a id="icon-contact" class="fab fa-github" href="https://github.com/torerik123"></a>
-                <a id="icon-contact" class="fas fa-envelope" href="#contact"></a>
-              </div>
-              
-            </div>
-          </div>
 
           <div class="skills">
-            <p class="card-text" id="intro">
-              I'm a software developer based in Trondheim. I like to make cool things and solve interesting problems.</p>
-            <hr>
             <h5 class="card-title">Skills:</h5>
             <p>
               <strong>Languages: </strong>
@@ -215,9 +217,7 @@
   </div>
 </div>
 
-
-
-  <!--Contact-->
+<!--Contact-->
 <div id="contact" class="contact">
   <div class="form-container">
     <h1 class="card-title text-center">Contact</h1>
