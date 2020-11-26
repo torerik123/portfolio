@@ -23,7 +23,7 @@ html {
 }
 
 .pink {
-    color:pink;
+    color:palevioletred;
 }
 
 /* Navbar */
@@ -115,6 +115,7 @@ html {
 }
 
 .skill-icons {
+    margin-top:-20px;
     margin-bottom: 10px;
 }
 
