@@ -122,19 +122,22 @@ html {
 }
 
 .buttoncontainer {
-    
+    margin-left:1em;
 }
-
-.projectbutton {
-    
-}
-
 
 /* Remove outline from Bootstrap cards */
 .card {
     background-color: transparent;
     color:white;
     border-style: none;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.card-title {
+    margin-top:20px;
 }
 
 /* About */
@@ -146,9 +149,6 @@ html {
     height:40vh;
     background-color: black;
     color:white;
-    /*background-image: url("mountain.png");
-    color:white;
-    */
 } 
 
 .img-col {
@@ -205,13 +205,15 @@ a:hover {
     color:#191970;
 }
 
-
 /* Button styling */
 .btn-dark {
-    border-radius: 0;
     background-color:transparent;
     border-color:white;
     border-width: 2px;
+}
+
+#highlightbtn {
+    background-color: red;
 }
 
 
