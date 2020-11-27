@@ -72,10 +72,6 @@ html {
     
 }
 
-#softwaredev {
-    color:pink;
-}
-
 .icons {
     display: flex;
     flex-direction: row;
@@ -173,7 +169,7 @@ html {
 
 a:hover {
     text-decoration: none;
-    color:#191970;
+    color:palevioletred;
 }
 
 /* Button styling */
@@ -194,5 +190,9 @@ a:hover {
 .buttoncontainer {
     display: flex;
     align-items: center;
+}
+
+.projectbutton {
+    margin-left:5px;
 }
 
