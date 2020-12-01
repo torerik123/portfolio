@@ -202,21 +202,27 @@
 
 <!--Contact-->
 <div id="contact" class="contact">
-  <div class="form-container">
-    <h1 class="card-title text-center">Contact</h1>
-    <form>
-      <div class="form-group">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-      </div>
-      <div class="form-group">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email adress">
-      </div>
-      <div class="form-group">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-      </div>
-    </form>
+  <div class="contactform">
+    <div class="form-container">
+      <h1 id="contact-title" class="card-title text-center">Contact</h1>
+      <form>
+        <div class="form-inputs">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="container-fluid text-center">
+          <button id="sendmessage" type="submit" class="btn btn-danger">Send message</button>
+        </div>
+      </form>
+    </div>
   </div>
-  
 </div>
 
 

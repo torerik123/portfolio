@@ -1,7 +1,7 @@
 /* Enable Bootstrap scrollspy */
 body {
     position: relative;
-    background-color:#212121;
+    background-color:#121212;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
 }
 
 .pink {
-    color:palevioletred;
+    color:#FF7597;
 }
 
 /* Navbar */
@@ -135,30 +135,55 @@ html {
     justify-content: center;
 }
 
-#icon-contact {
-    margin:5px;
-    padding:5px;
-    border-radius:50%;
-    background-color:gray;
-}
-
 /* Contact */
 .contact {
+    margin-top: 5%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
 }
 
-.form-container {
+/* Contact form background */
+.contactform {
+    width:50%;
     margin:2%;
     padding:2%;
+    padding-top:5%;
     border-radius:10px;
+    display: flex;
+    justify-content: center;
+    background: #424242; 
+}
+
+/* Contact form inputs */
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:50%;
-    background: #C0C0C0;
+    width:80%;
 }
 
+.form-inputs {
+    margin-top:5%;
+}
+
+.form-control,
+.form-control:focus {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+#contact-title {
+    color:#FFFFFF;
+}
+
+#sendmessage {
+    margin-top:5%;
+    font-size: large;
+}
 /* Footer */
 .footer {
     background: #343a40;
