@@ -45,6 +45,10 @@ html {
     color:white;
 }
 
+#jumbotron-title {
+    font-size: 7em;
+}
+
 .jumbotron {
     margin:0;
     height:100vh;
@@ -119,22 +123,6 @@ html {
     margin-bottom: 10px;
 }
 
-/* About */
-.skills-container {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:center;
-    height:40vh;
-    background-color: black;
-    color:white;
-} 
-
-.img-col {
-    display: flex;
-    justify-content: center;
-}
-
 /* Contact */
 .contact {
     margin-top: 5%;
@@ -152,7 +140,7 @@ html {
     border-radius:10px;
     display: flex;
     justify-content: center;
-    background: #424242; 
+    background: #424242;
 }
 
 /* Contact form inputs */
@@ -161,6 +149,10 @@ html {
     flex-direction: column;
     justify-content: center;
     width:80%;
+}
+
+.form-control::placeholder {
+    color:#FFFFFF;
 }
 
 .form-inputs {
@@ -184,6 +176,14 @@ html {
     margin-top:5%;
     font-size: large;
 }
+
+/* Contact form input color */
+input[type=name],input[type=name]:focus,
+input[type=email],input[type=email]:focus,
+textarea[type=message], textarea[type=message]:focus {
+    color:#FFFFFF;
+}
+
 /* Footer */
 .footer {
     background: #343a40;
@@ -198,7 +198,7 @@ html {
 
 a:hover {
     text-decoration: none;
-    color:palevioletred;
+    color:#FF7597;
 }
 
 /* Button styling */
@@ -224,4 +224,5 @@ a:hover {
 .projectbutton {
     margin-left:5px;
 }
+
 
