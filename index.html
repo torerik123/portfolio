@@ -20,7 +20,7 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" href="#home">Home</a>
       </li>
@@ -34,7 +34,7 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           CV
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu dropdown-menu-sm-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="js.png" download="CV_NOR_Tor_Erik_Grimen">Norwegian</a>
           <a class="dropdown-item" href="js.png" download="CV_ENG_Tor_Erik_Grimen">English</a>
         </div>
@@ -251,7 +251,7 @@
     
     // Hide navbar
     const nav = document.querySelector("#navbar")
-    //nav.style.visibility = "hidden";
+    nav.style.visibility = "hidden";
     
     // Show navbar when scrolling
     window.onscroll = function() {scrollFunction()};
@@ -261,12 +261,12 @@
     function scrollFunction() {
       
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 40) {
-        //nav.style.visibility = "visible";
-        //nav.style.top = "0";
+        nav.style.visibility = "visible";
+        nav.style.top = "0";
       } 
       
       else {
-        // nav.style.top = "-100px";
+        nav.style.top = "-100px";
         nav.style.visibility = "visible";
       }
     }
