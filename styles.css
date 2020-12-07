@@ -27,6 +27,9 @@ html {
 }
 
 /* Navbar */
+.navbar {
+    background-color:#121212;
+}
 #navbarNav {
     font-size: large;
 }
