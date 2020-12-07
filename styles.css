@@ -34,6 +34,7 @@ html {
     font-size: large;
 }
 
+
 /* Section titles */
 
 /* Hero */
@@ -61,8 +62,10 @@ html {
     background-color: transparent;
 }
 
+
 #left, #right {
     margin-top:5%;
+    color:white;
 }
 
 #right {
@@ -70,12 +73,18 @@ html {
 }
 
 .aboutme {
-    margin-right:20%;
+    
 }
 
-.hero-button {
-    color:pink;
-    text-decoration: underline;
+#herocontainer {
+    width:50%;
+}
+
+.herobuttons {
+    height:50px;
+    width: 50px;
+    border-color: white;
+    border-style: solid;
 }
 
 #jumbotron-title {
@@ -100,9 +109,15 @@ html {
 /*Skills */
 .skills {
     margin-top:2em;
+    margin-bottom:2em;
     display: flex;
     flex-direction: column;
     color:white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Projects */

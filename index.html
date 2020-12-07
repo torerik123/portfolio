@@ -13,7 +13,7 @@
 
 <body data-spy="scroll" data-target="#navbar">
   
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top" > <!--navbar-dark bg-dark-->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" > <!--navbar-dark bg-dark-->
   <a class="navbar-brand" href="#">Tor Erik Grimen</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -50,44 +50,46 @@
   <div class="container-fluid">
     <div class="row">
       <div id="left" class="col">
-        <div class="container text-center">
-          <h1 class="display-4" id="jumbotron-title">Tor Erik<br>Grimen<br></h1>
-          <a href="#projects" class="btn btn-light">View projects</a>
-          <a href="#contact" class="btn btn-dark">Contact</a>
-        </div>
-      </div>
-      <div id="right" class="col">    
-        <div class="aboutme">
-          <h2 class="card-title"><span class="pink">--About me</span></h2>
-          <p>I'm a software developer based in Trondheim. 
-            My background is from the film and television industry, 
-            and I have bachelors degree in film and television
-            production with a specialization in cinematography.
-            After a few years of working freelance I wanted a change.
-            I started teaching myself Python and quickly fell in love with programming.
-            Later I picked up C, Javascript, HTML and CSS and decided I wanted to do this for a living.
-          </p>
-        </div>
-
-        <!--Skills-->
-        <div class="skills">
-            <p>
-              <strong><span class="pink">Languages: </span></strong>
-                Python - Javascript - C - HTML - CSS
-              <br>
-              <strong><span class="pink">Frameworks/Libraries:</span></strong>
-                Flask - Bootstrap
-              <br>
-              <strong><span class="pink">Database: </span></strong>
-                PostgreSQL - SQlite
-              <br>
-              <strong><span class="pink">Version Control: </span></strong>
-                Git - Github
-              <br>
+        <div id="herocontainer" class="container text-center">
+          <h1 class="display-4" id="jumbotron-title">Tor Erik Grimen</h1>
+          <div class="aboutme">
+            <h2 class="card-title text-left"><span class="pink">ABOUT ME</span></h2>
+            <p class="card-text text-left">I'm a software developer based in Trondheim. 
+              My background is from the film and television industry, 
+              and I have bachelors degree in film and television
+              production with a specialization in cinematography.
+              After a few years of working freelance I wanted a change.
+              I started teaching myself Python and quickly fell in love with programming.
+              Later I picked up C, Javascript, HTML and CSS and decided I wanted to do this for a living.
             </p>
+
+            <!--Skills-->
+            <div class="skills">
+              <div class="skills-container">
+                <p class="card-text text-left">
+                  <strong><span class="pink">Languages: </span></strong>
+                    Python - Javascript - C - HTML - CSS
+                  <br>
+                  <strong><span class="pink">Frameworks/Libraries:</span></strong>
+                    Flask - Bootstrap
+                  <br>
+                  <strong><span class="pink">Database: </span></strong>
+                    PostgreSQL - SQlite
+                  <br>
+                  <strong><span class="pink">Version Control: </span></strong>
+                    Git - Github
+                  <br>
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#projects" class="btn btn-light">View projects</a>
+              <a href="#contact" class="btn btn-dark">Contact</a>
+            </div>
           </div>
         </div>
-      </div>
+      </div>  
+      
     </div>
   </div>
 </div>
