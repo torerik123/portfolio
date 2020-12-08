@@ -50,7 +50,9 @@ html {
 }
 
 #jumbotron-title {
-    font-size: 7em;
+    margin-top: 2em;
+    font-size: 2em;
+    font-weight: 400;
 }
 
 .jumbotron {
@@ -62,7 +64,6 @@ html {
     background-color: transparent;
 }
 
-
 #left, #right {
     margin-top:5%;
     color:white;
@@ -72,24 +73,30 @@ html {
     color:white;
 }
 
+/*About me */
 .aboutme {
-    
+    margin-top: 2em;
+}
+
+#aboutme-title {
+    font-size: small;
+}
+
+.aboutme-container {
+    display: flex;
+}
+
+#about-description {
+    width:50%;
+    margin-right:10%;
 }
 
 #herocontainer {
     width:50%;
 }
 
-.herobuttons {
-    height:50px;
-    width: 50px;
-    border-color: white;
-    border-style: solid;
-}
-
-#jumbotron-title {
-    font-weight: 400;;
-    
+#herobuttons {
+    margin-top:2em;
 }
 
 .icons {
@@ -108,10 +115,6 @@ html {
 
 /*Skills */
 .skills {
-    margin-top:2em;
-    margin-bottom:2em;
-    display: flex;
-    flex-direction: column;
     color:white;
 }
 
@@ -122,7 +125,7 @@ html {
 
 /* Projects */
 #projects-title {
-    margin: 1em;
+    margin-top: 3em;
 }
 
 /* Remove outline from Bootstrap cards */
@@ -244,3 +247,8 @@ a:hover {
 }
 
 
+/* Project img scaling */
+#project {
+    width:100%;
+    height:auto;
+}
