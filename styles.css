@@ -75,7 +75,7 @@ html {
 
 /*About me */
 .aboutme {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 #aboutme-title {
@@ -84,19 +84,35 @@ html {
 
 .aboutme-container {
     display: flex;
+    flex-direction: column;
 }
 
 #about-description {
-    width:50%;
     margin-right:10%;
 }
 
 #herocontainer {
+    display: flex;
+    justify-content:center;
+}
+
+#herocontainer2 {
     width:50%;
 }
 
+.introtext {
+    display: flex;
+    justify-content: center;
+}
+
 #herobuttons {
-    margin-top:2em;
+    margin-top:1em;
+    display: flex;
+    justify-content: center;
+}
+
+#hero-contact-btn {
+    margin-left: 5px;
 }
 
 .icons {
