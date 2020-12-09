@@ -96,7 +96,7 @@ html {
     justify-content:center;
 }
 
-/* Change width to 50 % above 576x screen */
+/* Default width for small screens */
 #herocontainer2 {
     width:100%;
 }
@@ -141,7 +141,7 @@ html {
 
 /* Projects */
 #projects-title {
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 /* Remove outline from Bootstrap cards */
@@ -252,7 +252,7 @@ a:hover {
     justify-content: space-between;
 }
 
-/*View code + demo buttons */
+/* Code + demo buttons */
 .buttoncontainer {
     display: flex;
     align-items: center;
@@ -277,7 +277,6 @@ a:hover {
     #herocontainer2 {
         width:75%;
     } 
-
 }
 
 /* Large devices (desktops, 992px and up) */
