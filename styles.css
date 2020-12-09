@@ -63,26 +63,26 @@ html {
     background-color: transparent;
 }
 
-#left, #right {
+#left {
     
-    color:white;
-}
-
-#right {
     color:white;
 }
 
 /*About me */
 .aboutme {
     margin-top: 1em;
-    margin-left: 3em;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #aboutme-title {
-    font-size: small;
+    margin-top:1em;
 }
 
 .aboutme-container {
+    margin-top:1em;
     display: flex;
     flex-direction: column;
 }
@@ -101,15 +101,8 @@ html {
     width:100%;
 }
 
-.introtext {
-    display: flex;
-    justify-content: center;
-}
-
 #herobuttons {
     margin-top:1em;
-    display: flex;
-    justify-content: center;
 }
 
 #hero-contact-btn {
@@ -170,10 +163,10 @@ html {
 
 /* Contact form background */
 .contactform {
-    width:50%;
+    width:90%;
     margin:2%;
     padding:2%;
-    padding-top:5%;
+    padding-top:2%;
     border-radius:10px;
     display: flex;
     justify-content: center;
@@ -274,21 +267,30 @@ a:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #herocontainer2 {
+    .aboutme {
         width:75%;
     } 
+
+    .contactform {
+        width: 70%;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #herocontainer2 {
+    .aboutme {
         width:65%;
     } 
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    #herocontainer2 {
-        width:60%;
+    .aboutme {
+        width:40%;
     }
+
+    .contactform {
+        width: 60%;
+    }
+
  }
