@@ -18,7 +18,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:70%;
+    width:100%;
     height:100%;
 }
 
@@ -56,17 +56,13 @@ html {
 }
 
 .jumbotron {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: transparent;
-}
-
-#left {
-    
     color:white;
 }
+
 
 /*About me */
 .aboutme {
@@ -74,7 +70,6 @@ html {
     width:100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #aboutme-title {
@@ -94,11 +89,6 @@ html {
 #herocontainer {
     display: flex;
     justify-content:center;
-}
-
-/* Default width for small screens */
-#herocontainer2 {
-    width:100%;
 }
 
 #herobuttons {
@@ -263,7 +253,9 @@ a:hover {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) {
+    
+ }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -278,13 +270,21 @@ a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .content {
+        width:70%;
+    }
+    
     .aboutme {
-        width:65%;
+        width:50%;
     } 
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    content {
+        width:70%;
+    }
+
     .aboutme {
         width:40%;
     }
@@ -292,5 +292,4 @@ a:hover {
     .contactform {
         width: 60%;
     }
-
  }
