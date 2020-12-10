@@ -200,7 +200,7 @@ html {
 
 /* Contact form input color */
 input[type=text],input[type=text]:focus,
-textarea[type=text], textarea[type=text]:focus {
+textarea[name=message], textarea[name=message]:focus {
     color:#FFFFFF;
 }
 
