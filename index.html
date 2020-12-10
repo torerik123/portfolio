@@ -251,23 +251,6 @@
     // Scrollspy 
     $('body').scrollspy({ target: '#navbar' })
 
-    // Hide navbar by default
-    const nav = document.querySelector("#navbar")
-    nav.style.visibility = "hidden";
-
-
-    window.onscroll = () => {
-
-      // Show navbar when scrolling
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 40) {
-        nav.style.visibility = "visible";
-      } 
-      
-      // Hide at top of page
-      else {
-        nav.style.visibility = "hidden";
-      }
-    };
   });
 </script>
 
