@@ -54,7 +54,7 @@ body {
 }
 
 .jumbotron {
-    height:100vh;
+    height:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,17 +252,19 @@ a:hover {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    
- }
+@media (min-width: 576px) { 
+
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .aboutme {
+        margin-top: 1em;
         width:75%;
     } 
 
     .contactform {
+        margin-top: 1em;
         width: 70%;
     }
 }
