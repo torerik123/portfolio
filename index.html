@@ -23,6 +23,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+          </div>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#home">Home</a>
         </li>
         <li class="nav-item">
@@ -60,7 +68,7 @@
                   <a id="hero-projects-btn" href="#projects" class="btn btn-light">View projects</a>
                   <a id="hero-contact-btn" href="#contact" class="btn btn-dark">Contact</a>
                 </div>
-                <h5 id="aboutme-title" class="card-text text-left"><span class="pink">About me</span></h2>
+                <h5 id="aboutme-title" class="card-text text-left"><span class="highlight">About me</span></h2>
                 <div class="aboutme-container">
                   <p id="about-description" class="card-text text-left"> 
                     Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
@@ -71,16 +79,16 @@
                   <div class="skills">
                     <div class="skills-container">
                       <p class="card-text text-left">
-                        <span id="skills-category" class="pink">Languages: </span>
+                        <span id="skills-category" class="highlight">Languages: </span>
                           Python - Javascript - C - HTML - CSS - SQL
                         <br>
-                        <span id="skills-category" class="pink">Frameworks / Libraries:</span>
+                        <span id="skills-category" class="highlight">Frameworks / Libraries:</span>
                           Flask - Bootstrap
                         <br>
-                        <span id="skills-category" class="pink">Database: </span>
+                        <span id="skills-category" class="highlight">Database: </span>
                           PostgreSQL - SQlite
                         <br>
-                        <span id="skills-category" class="pink">Version Control: </span>
+                        <span id="skills-category" class="highlight">Version Control: </span>
                           Git - Github
                         <br>
                       </p>
@@ -102,14 +110,14 @@
       <!--Projects-->
       <div id="projects" class="projects">
         <div class="container-fluid">
-          <h1 class="card-title text-center" id="projects-title"><span class="pink">Projects</span></h1> 
+          <h1 class="card-title text-center" id="projects-title"><span class="highlight">Projects</span></h1> 
           
           <!--Project 1-->
           <div class="card mb-3">             
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/AP.jpg" alt="Card image cap">  
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="pink">Adventure Planner</span></h4>
+                <h4 class="card-title"><span class="highlight">Adventure Planner</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://adventureplanner.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/adventureplanner" target="_blank" class="btn btn-dark">Code</a></span>
@@ -134,7 +142,7 @@
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/books.jpg" alt="Card image cap">
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="pink">Is it any good?</span></h4>
+                <h4 class="card-title"><span class="highlight">Is it any good?</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://tor-books.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/books" target="_blank" class="btn btn-dark">Code</a></span>
@@ -159,7 +167,7 @@
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/quiz2.jpg" alt="Card image cap">
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="pink">Quiz</span></h4>
+                <h4 class="card-title"><span class="highlight">Quiz</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://torerik123.github.io/Quiz/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/Quiz" target="_blank" class="btn btn-dark">Code</a></span>
@@ -182,7 +190,7 @@
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/tictactoe.jpg" alt="Card image cap">
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="pink">Tic Tac Toe</span></h4>
+                <h4 class="card-title"><span class="highlight">Tic Tac Toe</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://tictactoe--ai.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/tictactoe" target="_blank" class="btn btn-dark">Code</a></span>
@@ -235,7 +243,7 @@
   <footer class="footer">
     <div class="container text-center">
      <span style="font-size: 2rem;">
-      <a class="fab fa-github" href="https://github.com/torerik123" target="_blank"></a>
+      <a id="github-icon" class="fab fa-github" href="https://github.com/torerik123" target="_blank"></a>
      </span>   
     </div>
   </footer>
@@ -250,6 +258,31 @@
 
     // Scrollspy 
     $('body').scrollspy({ target: '#navbar' })
+    
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+      
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    // TODO: Add light theme to navbar and buttons
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        else {        document.documentElement.setAttribute('data-theme', 'light');
+              localStorage.setItem('theme', 'light');
+        }    
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
 
   });
 </script>

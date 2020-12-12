@@ -1,7 +1,80 @@
+/* Default theme colors - Dark */
+:root {
+    --bg-color: #121212;
+    --font-color: #FFF;
+    --highlight-color: #FF7597;
+}
+
+[data-theme="light"] {
+    --bg-color: #FFF;
+    --font-color: #000;
+    --highlight-color: #0F4C81;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+/* Dark mode switch */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--highlight-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
 /* Enable Bootstrap scrollspy */
 body {
     position: relative;
-    background-color:#121212;
 }
 
 html {
@@ -22,14 +95,15 @@ html {
     height:100%;
 }
 
-.pink {
-    color:#FF7597;
+.highlight {
+    color:var(--highlight-color);
 }
 
 /* Navbar */
 .navbar {
-    background-color:#121212;
+    background-color:var(--bg-color);
 }
+
 #navbarNav {
     font-size: large;
 }
@@ -42,7 +116,6 @@ html {
 
 body {
     font-family: 'Fjalla One', sans-serif;  
-    color:white;
 }
 
 /* Hero */
@@ -50,7 +123,6 @@ body {
     margin-top: 2em;
     font-size: 2em;
     font-weight: 400;
-    
 }
 
 .jumbotron {
@@ -59,7 +131,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: transparent;
-    color:white;
+    color:var(--font-color);
 }
 
 
@@ -108,12 +180,12 @@ body {
 
 .icons > i {
     margin:10px;
-    color:white;
+    color:var(--font-color);;
 }
 
 /*Skills */
 .skills {
-    color:white;
+    color:var(--font-color);;
 }
 
 .skills-container {
@@ -129,7 +201,7 @@ body {
 /* Remove outline from Bootstrap cards */
 .card {
     background-color: transparent;
-    color:white;
+    color:var(--font-color);;
     border-style: none;
 }
 
@@ -159,7 +231,7 @@ body {
     border-radius:10px;
     display: flex;
     justify-content: center;
-    background: #424242;
+    background-color: #404040;
 }
 
 /* Contact form inputs */
@@ -188,7 +260,7 @@ body {
 }
 
 #contact-title {
-    color:#FFFFFF;
+    color:#FFF;
 }
 
 #sendmessage {
@@ -210,14 +282,14 @@ textarea[name=message], textarea[name=message]:focus {
 }
 
 /* Remove link styling for icons*/
-  a, a:focus, a:active {
+  #github-icon, #github-icon:focus, #github-icon:active {
     text-decoration: none;
-    color: white;
+    color:#FFF;
 }
 
-a:hover {
+#github-icon:hover {
     text-decoration: none;
-    color:#FF7597;
+    color: var(--highlight-color);
 }
 
 /* Button styling */
