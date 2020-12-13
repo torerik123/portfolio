@@ -301,7 +301,7 @@ textarea[name=message], textarea[name=message]:focus {
 
 .lightbtn {
     background-color:transparent;
-    border-color:#000;
+    border-color:#343a40;
     border-width: 2px;
 }
 
