@@ -119,8 +119,8 @@
               <div class="titlecontainer">
                 <h4 class="card-title"><span class="highlight font-weight-bold">Adventure Planner</span></h4>
                 <div class="buttoncontainer">
-                  <span class="projectbutton"><a href="https://adventureplanner.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
-                  <span class="projectbutton"><a href="https://github.com/torerik123/adventureplanner" target="_blank" class="btn btn-dark">Code</a></span>
+                  <span class="projectbutton"><a href="https://adventureplanner.herokuapp.com/" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Demo</a></span>
+                  <span class="projectbutton"><a href="https://github.com/torerik123/adventureplanner" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Code</a></span>
                 </div>
               </div>
               <p class="card-text">
@@ -144,8 +144,8 @@
               <div class="titlecontainer">
                 <h4 class="card-title"><span class="highlight font-weight-bold">Is it any good?</span></h4>
                 <div class="buttoncontainer">
-                  <span class="projectbutton"><a href="https://tor-books.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
-                  <span class="projectbutton"><a href="https://github.com/torerik123/books" target="_blank" class="btn btn-dark">Code</a></span>
+                  <span class="projectbutton"><a href="https://tor-books.herokuapp.com/" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Demo</a></span>
+                  <span class="projectbutton"><a href="https://github.com/torerik123/books" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Code</a></span>
                 </div>
               </div>
               <p class="card-text">
@@ -169,8 +169,8 @@
               <div class="titlecontainer">
                 <h4 class="card-title"><span class="highlight font-weight-bold">Quiz</span></h4>
                 <div class="buttoncontainer">
-                  <span class="projectbutton"><a href="https://torerik123.github.io/Quiz/" target="_blank" class="btn btn-dark">Demo</a></span>
-                  <span class="projectbutton"><a href="https://github.com/torerik123/Quiz" target="_blank" class="btn btn-dark">Code</a></span>
+                  <span class="projectbutton"><a href="https://torerik123.github.io/Quiz/" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Demo</a></span>
+                  <span class="projectbutton"><a href="https://github.com/torerik123/Quiz" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Code</a></span>
                 </div>
               </div>
               <p class="card-text">
@@ -192,8 +192,8 @@
               <div class="titlecontainer">
                 <h4 class="card-title"><span class="highlight font-weight-bold">Tic Tac Toe</span></h4>
                 <div class="buttoncontainer">
-                  <span class="projectbutton"><a href="https://tictactoe--ai.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
-                  <span class="projectbutton"><a href="https://github.com/torerik123/tictactoe" target="_blank" class="btn btn-dark">Code</a></span>
+                  <span class="projectbutton"><a href="https://tictactoe--ai.herokuapp.com/" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Demo</a></span>
+                  <span class="projectbutton"><a href="https://github.com/torerik123/tictactoe" target="_blank" class="btn btn-dark darkbtn" id="linkbutton">Code</a></span>
                 </div>
               </div>
               <p class="card-text">
@@ -263,24 +263,29 @@
     navbar = document.querySelector("#navbar");
     viewProjectsBtn = document.querySelector("#hero-viewprojects");
     contactBtn = document.querySelector("#hero-contact");
+    contactForm = document.querySelector("#contactform");
+    projectButtons = document.querySelectorAll("#linkbutton");
 
     // Change nav + buttons to light or dark
     function light() {
-      navbar.classList.remove("navbar-dark");
-      navbar.classList.add("navbar-light");
-      viewProjectsBtn.classList.remove("btn-light");
-      viewProjectsBtn.classList.add("btn-dark");
-      contactBtn.classList.remove("btn-dark","darkbtn");
-      contactBtn.classList.add("btn-light", "lightbtn");
+      navbar.className ="navbar navbar-expand-lg navbar-light fixed-top";
+      viewProjectsBtn.className = "btn btn-dark";
+      contactBtn.className = "btn btn-light lightbtn";
+
+      projectButtons.forEach(button => {
+        button.className ="btn btn-light lightbtn"        
+      });
+
     }
 
     function dark() {
-      navbar.classList.remove("navbar-light");
-      navbar.classList.add("navbar-dark"); 
-      viewProjectsBtn.classList.remove("btn-dark");
-      viewProjectsBtn.classList.add("btn-light");
-      contactBtn.classList.remove("btn-light","lightbtn");
-      contactBtn.classList.add("btn-dark", "darkbtn");
+      navbar.className ="navbar navbar-expand-lg navbar-dark fixed-top";
+      viewProjectsBtn.className = "btn btn-light";
+      contactBtn.className = "btn btn-dark darkbtn";
+
+      projectButtons.forEach(button => {
+        button.className ="btn btn-dark darkbtn";        
+      });
     }
 
     // Dark / Light theme switch
