@@ -65,8 +65,8 @@
                   <h1 class="display-4" id="jumbotron-title">Hi! I'm Tor Erik Grimen. <br> I'm a software developer <br>based in Trondheim.</h1>
                 </div>
                 <div id="herobuttons">
-                  <a id="hero-projects-btn" href="#projects" class="btn btn-light">View projects</a>
-                  <a id="hero-contact-btn" href="#contact" class="btn btn-dark">Contact</a>
+                  <a id="hero-viewprojects" href="#projects" class="btn btn-light">View projects</a>
+                  <a id="hero-contact" href="#contact" class="btn btn-dark darkbtn">Contact</a>
                 </div>
                 <h5 id="aboutme-title" class="font-weight-light text-left"><span class="highlight font-weight-bold">About me</span></h2>
                 <div class="aboutme-container">
@@ -110,14 +110,14 @@
       <!--Projects-->
       <div id="projects" class="projects">
         <div class="container-fluid">
-          <h1 class="card-title text-center" id="projects-title"><span class="highlight">Projects</span></h1> 
+          <h1 class="card-title text-center" id="projects-title"><span class="highlight font-weight-bold">Projects</span></h1> 
           
           <!--Project 1-->
           <div class="card mb-3">             
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/AP.jpg" alt="Card image cap">  
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="highlight">Adventure Planner</span></h4>
+                <h4 class="card-title"><span class="highlight font-weight-bold">Adventure Planner</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://adventureplanner.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/adventureplanner" target="_blank" class="btn btn-dark">Code</a></span>
@@ -142,7 +142,7 @@
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/books.jpg" alt="Card image cap">
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="highlight">Is it any good?</span></h4>
+                <h4 class="card-title"><span class="highlight font-weight-bold">Is it any good?</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://tor-books.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/books" target="_blank" class="btn btn-dark">Code</a></span>
@@ -167,7 +167,7 @@
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/quiz2.jpg" alt="Card image cap">
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="highlight">Quiz</span></h4>
+                <h4 class="card-title"><span class="highlight font-weight-bold">Quiz</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://torerik123.github.io/Quiz/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/Quiz" target="_blank" class="btn btn-dark">Code</a></span>
@@ -190,7 +190,7 @@
             <div class="card-body">
               <img id="project" class="img-fluid" src="./static/images/tictactoe.jpg" alt="Card image cap">
               <div class="titlecontainer">
-                <h4 class="card-title"><span class="highlight">Tic Tac Toe</span></h4>
+                <h4 class="card-title"><span class="highlight font-weight-bold">Tic Tac Toe</span></h4>
                 <div class="buttoncontainer">
                   <span class="projectbutton"><a href="https://tictactoe--ai.herokuapp.com/" target="_blank" class="btn btn-dark">Demo</a></span>
                   <span class="projectbutton"><a href="https://github.com/torerik123/tictactoe" target="_blank" class="btn btn-dark">Code</a></span>
@@ -217,7 +217,7 @@
   <div id="contact" class="contact">
     <div class="contactform">
       <div class="form-container">
-        <h1 id="contact-title" class="card-title text-center">Contact</h1>
+        <h1 id="contact-title" class="card-title font-weight-bold text-center">Contact</h1>
         <form action="https://formspree.io/f/xpzoydbv" method="POST">
           <div class="form-inputs">
             <div class="form-group">
@@ -259,26 +259,59 @@
     // Scrollspy 
     $('body').scrollspy({ target: '#navbar' })
     
+    // Nav and buttons
+    navbar = document.querySelector("#navbar");
+    viewProjectsBtn = document.querySelector("#hero-viewprojects");
+    contactBtn = document.querySelector("#hero-contact");
+
+    // Change nav + buttons to light or dark
+    function light() {
+      navbar.classList.remove("navbar-dark");
+      navbar.classList.add("navbar-light");
+      viewProjectsBtn.classList.remove("btn-light");
+      viewProjectsBtn.classList.add("btn-dark");
+      contactBtn.classList.remove("btn-dark","darkbtn");
+      contactBtn.classList.add("btn-light", "lightbtn");
+    }
+
+    function dark() {
+      navbar.classList.remove("navbar-light");
+      navbar.classList.add("navbar-dark"); 
+      viewProjectsBtn.classList.remove("btn-dark");
+      viewProjectsBtn.classList.add("btn-light");
+      contactBtn.classList.remove("btn-light","lightbtn");
+      contactBtn.classList.add("btn-dark", "darkbtn");
+    }
+
+    // Dark / Light theme switch
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
     const currentTheme = localStorage.getItem('theme');
 
     if (currentTheme) {
         document.documentElement.setAttribute('data-theme', currentTheme);
-      
+
+        if (currentTheme === 'light') {
+          light();
+        }
+
         if (currentTheme === 'dark') {
             toggleSwitch.checked = true;
+            dark();  
         }
     }
 
-    // TODO: Add light theme to navbar and buttons
 
     function switchTheme(e) {
         if (e.target.checked) {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
+            dark();
         }
-        else {        document.documentElement.setAttribute('data-theme', 'light');
+
+        else {        
+              document.documentElement.setAttribute('data-theme', 'light');
               localStorage.setItem('theme', 'light');
+              light();
         }    
     }
 

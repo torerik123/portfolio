@@ -34,7 +34,7 @@ body {
   }
   
   .slider {
-    background-color: #ccc;
+    background-color: var(--highlight-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -293,9 +293,15 @@ textarea[name=message], textarea[name=message]:focus {
 }
 
 /* Button styling */
-.btn-dark {
+.darkbtn {
     background-color:transparent;
     border-color:white;
+    border-width: 2px;
+}
+
+.lightbtn {
+    background-color:transparent;
+    border-color:#000;
     border-width: 2px;
 }
 
