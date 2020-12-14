@@ -103,6 +103,7 @@ html {
     height:100%;
 }
 
+
 .highlight {
     color:var(--highlight-color);
 }
@@ -174,11 +175,6 @@ body {
 
 #about-description {
     margin-right:10%;
-}
-
-#herocontainer {
-    display: flex;
-    justify-content:center;
 }
 
 #herobuttons {
