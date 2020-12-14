@@ -3,6 +3,7 @@
     --bg-color: #121212;
     --font-color: #FFF;
     --highlight-color: #FF7597;
+    --btn-hover: #cc5e79;
     --contactform-color: #303030;
     --placeholder-color: #FFF;
     --input-color: #404040;
@@ -12,6 +13,7 @@
     --bg-color: #FFF;
     --font-color: #000;
     --highlight-color: #0F4C81;
+    --btn-hover: #092e4d;
     --contactform-color: #FFF;
     --placeholder-color:#000;
     --input-color: #DCDCDC;
@@ -344,6 +346,10 @@ textarea[name=message], textarea[name=message]:focus {
     border-color: var(--highlight-color);
 }
 
+.btn-danger:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+}
 /* Container for title + buttons */
 .titlecontainer {
     display: flex;
