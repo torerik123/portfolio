@@ -28,7 +28,7 @@ body {
     align-items: center;
   }
 
-  .theme-switch {
+.theme-switch {
     display: inline-block;
     height: 34px;
     position: relative;
@@ -112,6 +112,17 @@ html {
 
 #navbarNav {
     font-size: large;
+}
+
+
+/* Left align navbar brand and right align switch and hamburgermenu */
+.navbarcontent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch-and-hamburgermenu {
+    display: flex;
 }
 
 /* Fonts */ 
@@ -286,7 +297,7 @@ textarea[name=message], textarea[name=message]:focus {
 
 /* Footer */
 .footer {
-    background: #343a40;
+    background: #303030;
     color:white;
 }
 
@@ -326,6 +337,11 @@ textarea[name=message], textarea[name=message]:focus {
     border-color:#343a40;
     border-width: 2px;
     color:#fff;
+}
+
+.btn-danger {
+    background-color: var(--highlight-color);
+    border-color: var(--highlight-color);
 }
 
 /* Container for title + buttons */
