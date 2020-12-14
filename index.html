@@ -61,52 +61,50 @@
     <div class="content">
 
       <!--Hero-->
-  <div id="home" class="jumbotron jumbotron-fluid">
-
-    <div class="container-fluid">
-      
+      <div id="home" class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+          <div class="aboutme">
+            <div class="aboutme2">
+              <div class="introtext">
+                <h1 class="display-4" id="jumbotron-title">Hi! I'm Tor Erik Grimen. <br> I'm a software developer <br>based in Trondheim.</h1>
+              </div>
+              <div id="herobuttons">
+                <a id="hero-viewprojects" href="#projects" class="btn btn-light">View projects</a>
+                <a id="hero-contact" href="#contact" class="btn btn-dark darkbtn">Contact</a>
+              </div>
+              <h5 id="aboutme-title" class="font-weight-light text-left"><span class="highlight font-weight-bold">About me</span></h2>
+              <div class="aboutme-container">
+                <p id="about-description" class="card-text text-left">  
+                  I used to work with film and television production, but after falling in love
+                  with programming I decided to pursue a career in software development.
+                  I like to solve problems and dive into new technologies. 
+                  When I'm not working I dream of climbing big mountains.
+                </p>
             
-            <div class="aboutme">
-              <div class="aboutme2">
-                <div class="introtext">
-                  <h1 class="display-4" id="jumbotron-title">Hi! I'm Tor Erik Grimen. <br> I'm a software developer <br>based in Trondheim.</h1>
-                </div>
-                <div id="herobuttons">
-                  <a id="hero-viewprojects" href="#projects" class="btn btn-light">View projects</a>
-                  <a id="hero-contact" href="#contact" class="btn btn-dark darkbtn">Contact</a>
-                </div>
-                <h5 id="aboutme-title" class="font-weight-light text-left"><span class="highlight font-weight-bold">About me</span></h2>
-                <div class="aboutme-container">
-                  <p id="about-description" class="card-text text-left"> 
-                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
-                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
-                  </p>
-        
-                  <!--Skills-->
-                  <div class="skills">
-                    <div class="skills-container">
-                      <p class="card-text text-left">
-                        <span id="skills-category" class="highlight font-weight-bold">Languages: </span>
-                          Python - Javascript - C - HTML - CSS - SQL
-                        <br>
-                        <span id="skills-category" class="highlight font-weight-bold">Frameworks / Libraries:</span>
-                          Flask - Bootstrap
-                        <br>
-                        <span id="skills-category" class="highlight font-weight-bold">Database: </span>
-                          PostgreSQL - SQlite
-                        <br>
-                        <span id="skills-category" class="highlight font-weight-bold">Version Control: </span>
-                          Git - Github
-                        <br>
-                      </p>
-                    </div>
+                <!--Skills-->
+                <div class="skills">
+                  <div class="skills-container">
+                    <p class="card-text text-left">
+                      <span id="skills-category" class="highlight font-weight-bold">Languages: </span>
+                        Python - Javascript - C - HTML - CSS - SQL
+                      <br>
+                      <span id="skills-category" class="highlight font-weight-bold">Frameworks / Libraries:</span>
+                        Flask - Bootstrap
+                      <br>
+                      <span id="skills-category" class="highlight font-weight-bold">Database: </span>
+                        PostgreSQL - SQlite
+                      <br>
+                      <span id="skills-category" class="highlight font-weight-bold">Version Control: </span>
+                        Git - Github
+                      <br>
+                    </p>
                   </div>
                 </div>
               </div>
-              
+            </div>  
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
       <!--Projects-->
       <div id="projects" class="projects">
@@ -218,7 +216,7 @@
   <div id="contact" class="contact">
     <div class="contactform">
       <div class="form-container">
-        <h1 id="contact-title" class="card-title font-weight-bold text-center">Contact</h1>
+        <h1 id="contact-title" class="card-title font-weight-bold text-left">Contact</h1>
         <form action="https://formspree.io/f/xpzoydbv" method="POST">
           <div class="form-inputs">
             <div class="form-group">
@@ -231,7 +229,7 @@
               <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4" required></textarea>
             </div>
           </div>
-          <div class="container-fluid text-center">
+          <div class="container-fluid text-left">
             <button id="sendmessage" type="submit" value="Send" class="btn btn-danger">Send message</button>
           </div>
         </form>
