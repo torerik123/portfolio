@@ -28,6 +28,7 @@ body {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
+    margin-right:8px;
   }
 
 .theme-switch {
@@ -384,7 +385,7 @@ textarea[name=message], textarea[name=message]:focus {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    
+
 }
 
 /* Medium devices (tablets, 768px and up) */
