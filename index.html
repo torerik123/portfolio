@@ -112,7 +112,7 @@
           <h1 class="card-title text-left" id="projects-title"><span class="highlight font-weight-bold">Projects</span></h1> 
           
           <!--Project 1-->
-          <div class="card mb-3">  
+          <div class="card">  
             <img id="project" class="img-fluid" src="./static/images/AP.jpg" alt="Card image cap">           
             <div class="card-body">  
               <div class="titlecontainer">
@@ -137,8 +137,8 @@
           </div>
 
           <!--Project 2-->
-          <div class="card mb-3">  
-            <img id="project" class="img-fluid" src="./static/images/books2.jpg" alt="Card image cap">             
+          <div class="card margin48">  
+            <img id="project" class="img-fluid " src="./static/images/books2.jpg" alt="Card image cap">             
             <div class="card-body">
               <div class="titlecontainer">
                 <h4 class="card-title"><span class="highlight font-weight-bold">Is it any good?</span></h4>
@@ -162,7 +162,7 @@
           </div>
 
           <!--Project 3-->
-          <div class="card mb-3">  
+          <div class="card margin48">  
             <img id="project" class="img-fluid" src="./static/images/quiz2.jpg" alt="Card image cap">             
             <div class="card-body">
               <div class="titlecontainer">
@@ -185,7 +185,7 @@
           </div>
 
           <!--Project 4-->
-          <div class="card mb-3">  
+          <div class="card margin48">  
             <img id="project" class="img-fluid" src="./static/images/tictactoe.jpg" alt="Card image cap">             
             <div class="card-body">
               <div class="titlecontainer">
@@ -209,31 +209,39 @@
           </div>
         </div>
       </div>
+
+
+      <div class="contactform">
+        <div class="form-container">
+          <h1 id="contact-title" class="card-title font-weight-bold text-left">Contact</h1>
+          <form action="https://formspree.io/f/xpzoydbv" method="POST">
+            <div class="form-inputs">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4" required></textarea>
+              </div>
+            </div>
+            <button id="sendmessage" type="submit" value="Send" class="btn btn-danger">Send message</button>
+          </form>
+        </div>
+      </div>
+
+      
     </div>  
   </div>
 
+
+
   <!--Contact-->
-  <div id="contact" class="contact">
-    <div class="contactform">
-      <div class="form-container">
-        <h1 id="contact-title" class="card-title font-weight-bold text-left">Contact</h1>
-        <form action="https://formspree.io/f/xpzoydbv" method="POST">
-          <div class="form-inputs">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-              <input type="text" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="4" required></textarea>
-            </div>
-          </div>
-          <div class="container-fluid text-left">
-            <button id="sendmessage" type="submit" value="Send" class="btn btn-danger">Send message</button>
-          </div>
-        </form>
-      </div>
+  <div class="container-fluid">
+    <div id="contact" class="contact">
+     
+      
     </div>
   </div>
 
