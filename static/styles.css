@@ -252,7 +252,6 @@ body {
 /* Contact */
 /* Contact form background */
 .contactform {
-    margin-left:48px;
     margin-bottom:48px;
     width:90%;
     padding:2%;
@@ -409,6 +408,10 @@ textarea[name=message], textarea[name=message]:focus {
     .jumbotron {
         height:100vh;
     }
+
+    .contactform {
+        margin-left:48px;
+    }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -422,6 +425,7 @@ textarea[name=message], textarea[name=message]:focus {
     }
 
     .contactform {
+        margin-left:48px;
         width: 60%;
     }
 
